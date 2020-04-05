@@ -6,7 +6,7 @@ app=Flask(__name__)
 app.config.from_pyfile('config.py')
 #app.config.from_object(os.environ['APP_SETTINGS'])
 #print(os.environ['APP_SETTINGS'])
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://postgres:7742090748@localhost:5432/wordcount_dev'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres:///wordcount_dev'
 #app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
